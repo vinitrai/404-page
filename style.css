@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap');
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+   font-family: 'Space Mono', monospace;
+   font-size:16px;
+}
+img{
+    width:100%;
+    max-width: 100%;
+}
+.container{
+    padding: 2em 0;
+}
+.row{
+    width:100%;
+    margin: 0 auto;
+    max-width: 1550px;
+}
+div.error__msg {
+    padding: 0.5em ;
+    font-size: 1.5rem;
+    line-height: 25px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.035em;
+}
+.not__found-image{
+    padding: 0.5em 4em;
+}
+.not__found-text > *{
+    margin-left: 1.5rem;
+}
+h1.not__found-text-title{
+    padding: 0.5em 0;
+    font-size:3rem;
+    font-weight: 700;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+    margin-bottom: 0.5em;
+}
+p.not__found-text-para{
+    padding: 0.5em 0;
+    font-size:1.1rem;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 0.5em;
+}
+
+.action__btn{
+    margin-bottom: 1em;
+}
+.action__btn button{
+    font-size:14px;
+    letter-spacing: -0.035em;
+    font-weight: 700;
+    background-color: #333333;
+    color:#ffffff;
+    text-transform: uppercase;
+    padding:1em 0.5em;
+    outline:none;
+    width:50%;
+    border:none;
+}
+@media screen and (min-width:567px){
+    .row{
+        width:90%;
+    }
+    div.error__msg{
+        margin-left: 3.5em;
+    }
+    .not__found{
+        display:flex;
+        padding:4em;
+    }
+    
+     .not__found-image{
+          flex:1 1 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:0.5em;
+    }
+    .not__found-text{
+        flex:1 1 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* h1.not__found-text-title{
+        font-size:4rem;
+        line-height: 95px;
+    }
+    p.not__found-text-para{
+        font-size: 1.5rem;
+        line-height: 36px;
+    } */
+
+    
+}
+@media screen and (min-width:768px){
+    .not__found-image{
+        flex-basis:50%;
+    }
+    .not__found-text{
+        flex-basis:50%;
+    }
+    h1.not__found-text-title{
+        font-size:3.5rem;
+        line-height: 83px;
+    }
+    p.not__found-text-para{
+        font-size: 1.25rem;
+        line-height: 31.5px;
+    }
+    
+}
+@media screen and (min-width:990px){
+    .row{
+        width:80%;
+    }
+    .not__found-image{
+        flex-basis: 40%;
+    }
+    .not__found-text{
+        flex-basis: 60%;
+    }
+     h1.not__found-text-title{
+        font-size:4rem;
+        line-height: 95px;
+        max-width: 586px;
+    }
+    p.not__found-text-para{
+        font-size: 1.5rem;
+        line-height: 36px;
+        max-width: 381px;
+    }
+}
